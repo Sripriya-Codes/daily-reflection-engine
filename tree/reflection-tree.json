@@ -3,7 +3,7 @@
     {
       "id": "START",
       "type": "start",
-      "text": "Good evening. Before you switch off, let’s take a quick look at how today went.",
+      "text": "Good evening. Before you switch off, take a minute to answer honestly. Let’s take a quick look at how today went.",
       "next": "A1_Q1"
     },
     {
@@ -24,7 +24,7 @@
     {
       "id": "A1_Q2_HIGH",
       "type": "question",
-      "text": "Looking at what went well — what really made it happen?",
+      "text": "Looking at what went well, what really made it happen?",
       "options": ["I prepared or planned well", "I made good decisions in the moment", "Others supported me", "It just worked out"],
       "signals": {
         "I prepared or planned well": "axis1:internal",
@@ -76,19 +76,19 @@
     {
       "id": "A1_R1",
       "type": "reflection",
-      "text": "There’s a pattern here — you’re not just reacting, you’re shaping outcomes. Even small adjustments like these are what build real control over time.",
+      "text": "There’s a pattern here - you’re not just reacting, you’re shaping outcomes. Even small adjustments like these are what build real control over time.",
       "next": "BRIDGE_1_2"
     },
     {
       "id": "A1_R2",
       "type": "reflection",
-      "text": "Days like this can feel like things just happen to you. But even noticing where you *might* have had a choice is a shift — that’s where agency starts to grow.",
+      "text": "Days like this can feel like things just happen to you. But even noticing where you *might* have had a choice is a shift - that’s where agency starts to grow.",
       "next": "BRIDGE_1_2"
     },
     {
       "id": "BRIDGE_1_2",
       "type": "bridge",
-      "text": "Let’s shift gears a bit — from what happened to you, to what you brought into the day.",
+      "text": "Let’s shift gears a bit - from what happened to you, to what you brought into the day.",
       "next": "A2_Q1"
     },
     {
@@ -135,19 +135,19 @@
     {
       "id": "A2_R1",
       "type": "reflection",
-      "text": "You stepped beyond just your own tasks. That kind of contribution often goes unnoticed in the moment — but it quietly compounds into trust and influence.",
+      "text": "You stepped beyond just your own tasks. That kind of contribution often goes unnoticed in the moment - but it quietly compounds into trust and influence.",
       "next": "BRIDGE_2_3"
     },
     {
       "id": "A2_R2",
       "type": "reflection",
-      "text": "It’s natural to notice what’s missing — recognition, effort, fairness. But shifting even a little toward contribution can change how the whole system responds to you.",
+      "text": "It’s natural to notice what’s missing, like recognition, effort, or fairness. But shifting even a little toward contribution can change how the whole system responds to you.",
       "next": "BRIDGE_2_3"
     },
     {
       "id": "BRIDGE_2_3",
       "type": "bridge",
-      "text": "One last shift — let’s zoom out and look beyond just your own experience.",
+      "text": "One last shift - let’s zoom out and look beyond just your own experience.",
       "next": "A3_Q1"
     },
     {
@@ -194,19 +194,19 @@
     {
       "id": "A3_R1",
       "type": "reflection",
-      "text": "You weren’t just inside your own day — you were part of something larger. That shift in perspective is often where meaning starts to show up.",
+      "text": "You weren’t just inside your own day - you were part of something larger. That shift in perspective is often where meaning starts to show up.",
       "next": "SUMMARY"
     },
     {
       "id": "A3_R2",
       "type": "reflection",
-      "text": "When everything feels personal, the weight increases. Even briefly considering others can ease that — not by ignoring your problems, but by placing them in a wider frame.",
+      "text": "When everything feels personal, the weight increases. Even briefly considering others can ease that - not by ignoring your problems, but by placing them in a wider frame.",
       "next": "SUMMARY"
     },
     {
       "id": "SUMMARY",
       "type": "summary",
-      "text": "Today wasn’t just about what happened — it was about how you responded, what you contributed, and how wide your perspective was. Noticing these patterns is how better days are built.",
+      "text": "Today wasn’t just about what happened. It was about how you responded, what you contributed, and how wide your perspective was. Noticing these patterns is how better days are built.",
       "next": "END"
     },
     {
