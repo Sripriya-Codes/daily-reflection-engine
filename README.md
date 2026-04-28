@@ -45,7 +45,7 @@ README.md → project overview
 
 ## 🌳 Reflection Flow (Diagram)
 
-````mermaid
+```mermaid
 flowchart TD
     START --> A1_Q1
     A1_Q1 --> A1_D1
@@ -85,38 +85,5 @@ flowchart TD
 
 '''
 
- ✨ Key Features
-Deterministic decision tree
-Fixed-option branching
-Signal-based state tracking
-Structured reflection flow
-No dependency on AI at runtime
 
-
- 🎯 Purpose
-
-This project demonstrates how psychological concepts can be translated into structured systems that guide thinking without relying on generative AI.
-
-It reflects a knowledge engineering approach — turning abstract ideas into navigable decision trees.
-
-🚀 Future Improvements
-More nuanced signal scoring
-Dynamic summary generation
-UI-based interaction
-Larger question bank for variation
-📌 Note
-
-AI tools were used during development for ideation and refinement, but the final system is fully deterministic and does not rely on AI execution.
-
----
-
-# ✅ AFTER THIS
-
-1. Save file
-2. Run:
-
-```bash
-git add .
-git commit -m "final readme"
-git push
-````
+```
