@@ -85,19 +85,15 @@ flowchart TD
 
 '''
 
-
----
-
-##  ✨ Key Features
+ ✨ Key Features
 Deterministic decision tree
 Fixed-option branching
 Signal-based state tracking
 Structured reflection flow
 No dependency on AI at runtime
 
----
 
-## 🎯 Purpose
+ 🎯 Purpose
 
 This project demonstrates how psychological concepts can be translated into structured systems that guide thinking without relying on generative AI.
 
