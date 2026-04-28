@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "id": "START",
+      "type": "start",
+      "text": "Good evening. Before you switch off, let’s take a quick look at how today went.",
+      "next": "A1_Q1"
+    },
+    {
+      "id": "A1_Q1",
+      "type": "question",
+      "text": "If you had to sum up your day in one word, what would it be?",
+      "options": ["Productive", "Tough", "Mixed", "Frustrating"],
+      "next": "A1_D1"
+    },
+    {
+      "id": "A1_D1",
+      "type": "decision",
+      "rules": [
+        { "if": ["Productive", "Mixed"], "goto": "A1_Q2_HIGH" },
+        { "if": ["Tough", "Frustrating"], "goto": "A1_Q2_LOW" }
+      ]
+    },
+    {
+      "id": "A1_Q2_HIGH",
+      "type": "question",
+      "text": "Looking at what went well — what really made it happen?",
+      "options": ["I prepared or planned well", "I made good decisions in the moment", "Others supported me", "It just worked out"],
+      "signals": {
+        "I prepared or planned well": "axis1:internal",
+        "I made good decisions in the moment": "axis1:internal",
+        "Others supported me": "axis1:external",
+        "It just worked out": "axis1:external"
+      },
+      "next": "A1_Q3_HIGH"
+    },
+    {
+      "id": "A1_Q3_HIGH",
+      "type": "question",
+      "text": "When something small went off-track, how did you respond?",
+      "options": ["Adjusted quickly", "Ignored it and moved on", "Waited for clarity", "Relied on others"],
+      "signals": {
+        "Adjusted quickly": "axis1:internal",
+        "Ignored it and moved on": "axis1:neutral",
+        "Waited for clarity": "axis1:external",
+        "Relied on others": "axis1:external"
+      },
+      "next": "A1_R1"
+    },
+    {
+      "id": "A1_Q2_LOW",
+      "type": "question",
+      "text": "When things didn’t go as expected, what was your first instinct?",
+      "options": ["Figure out what I could still control", "Wait for someone to step in", "Feel stuck", "Push through without changing approach"],
+      "signals": {
+        "Figure out what I could still control": "axis1:internal",
+        "Push through without changing approach": "axis1:internal",
+        "Wait for someone to step in": "axis1:external",
+        "Feel stuck": "axis1:external"
+      },
+      "next": "A1_Q3_LOW"
+    },
+    {
+      "id": "A1_Q3_LOW",
+      "type": "question",
+      "text": "Looking back now, was there a moment you had more choice than it felt like?",
+      "options": ["Yes, I could have acted differently", "Maybe, but it wasn’t obvious then", "Not really", "I didn’t think about it"],
+      "signals": {
+        "Yes, I could have acted differently": "axis1:internal",
+        "Maybe, but it wasn’t obvious then": "axis1:neutral",
+        "Not really": "axis1:external",
+        "I didn’t think about it": "axis1:external"
+      },
+      "next": "A1_R2"
+    },
+    {
+      "id": "A1_R1",
+      "type": "reflection",
+      "text": "There’s a pattern here — you’re not just reacting, you’re shaping outcomes. Even small adjustments like these are what build real control over time.",
+      "next": "BRIDGE_1_2"
+    },
+    {
+      "id": "A1_R2",
+      "type": "reflection",
+      "text": "Days like this can feel like things just happen to you. But even noticing where you *might* have had a choice is a shift — that’s where agency starts to grow.",
+      "next": "BRIDGE_1_2"
+    },
+    {
+      "id": "BRIDGE_1_2",
+      "type": "bridge",
+      "text": "Let’s shift gears a bit — from what happened to you, to what you brought into the day.",
+      "next": "A2_Q1"
+    },
+    {
+      "id": "A2_Q1",
+      "type": "question",
+      "text": "Think of one interaction today. What stands out most?",
+      "options": ["I helped someone beyond my role", "I focused on my own tasks", "I felt I deserved more recognition", "I felt others weren’t doing enough"],
+      "next": "A2_D1"
+    },
+    {
+      "id": "A2_D1",
+      "type": "decision",
+      "rules": [
+        { "if": ["I helped someone beyond my role"], "goto": "A2_Q2_HIGH" },
+        { "if": ["I focused on my own tasks", "I felt I deserved more recognition", "I felt others weren’t doing enough"], "goto": "A2_Q2_LOW" }
+      ]
+    },
+    {
+      "id": "A2_Q2_HIGH",
+      "type": "question",
+      "text": "What drove you to step in and help?",
+      "options": ["It felt like the right thing", "I care about team outcomes", "I had the capacity", "I didn’t think much about it"],
+      "signals": {
+        "It felt like the right thing": "axis2:contribution",
+        "I care about team outcomes": "axis2:contribution",
+        "I had the capacity": "axis2:contribution",
+        "I didn’t think much about it": "axis2:neutral"
+      },
+      "next": "A2_R1"
+    },
+    {
+      "id": "A2_Q2_LOW",
+      "type": "question",
+      "text": "Where was most of your attention during the day?",
+      "options": ["Finishing what I had to do", "Whether I’d be recognized", "What others weren’t doing", "Avoiding extra work"],
+      "signals": {
+        "Finishing what I had to do": "axis2:neutral",
+        "Whether I’d be recognized": "axis2:entitlement",
+        "What others weren’t doing": "axis2:entitlement",
+        "Avoiding extra work": "axis2:entitlement"
+      },
+      "next": "A2_R2"
+    },
+    {
+      "id": "A2_R1",
+      "type": "reflection",
+      "text": "You stepped beyond just your own tasks. That kind of contribution often goes unnoticed in the moment — but it quietly compounds into trust and influence.",
+      "next": "BRIDGE_2_3"
+    },
+    {
+      "id": "A2_R2",
+      "type": "reflection",
+      "text": "It’s natural to notice what’s missing — recognition, effort, fairness. But shifting even a little toward contribution can change how the whole system responds to you.",
+      "next": "BRIDGE_2_3"
+    },
+    {
+      "id": "BRIDGE_2_3",
+      "type": "bridge",
+      "text": "One last shift — let’s zoom out and look beyond just your own experience.",
+      "next": "A3_Q1"
+    },
+    {
+      "id": "A3_Q1",
+      "type": "question",
+      "text": "When you think about today’s biggest moment, who comes to mind first?",
+      "options": ["Just me", "My team", "A specific colleague", "The customer or end user"],
+      "next": "A3_D1"
+    },
+    {
+      "id": "A3_D1",
+      "type": "decision",
+      "rules": [
+        { "if": ["Just me"], "goto": "A3_Q2_LOW" },
+        { "if": ["My team", "A specific colleague", "The customer or end user"], "goto": "A3_Q2_HIGH" }
+      ]
+    },
+    {
+      "id": "A3_Q2_HIGH",
+      "type": "question",
+      "text": "How did your actions affect others today?",
+      "options": ["Helped someone move forward", "Made things smoother for the team", "Contributed to a shared goal", "I’m not sure"],
+      "signals": {
+        "Helped someone move forward": "axis3:others",
+        "Made things smoother for the team": "axis3:others",
+        "Contributed to a shared goal": "axis3:others",
+        "I’m not sure": "axis3:self"
+      },
+      "next": "A3_R1"
+    },
+    {
+      "id": "A3_Q2_LOW",
+      "type": "question",
+      "text": "What was taking up most of your mental space?",
+      "options": ["My stress", "My deadlines", "My performance", "My problems"],
+      "signals": {
+        "My stress": "axis3:self",
+        "My deadlines": "axis3:self",
+        "My performance": "axis3:self",
+        "My problems": "axis3:self"
+      },
+      "next": "A3_R2"
+    },
+    {
+      "id": "A3_R1",
+      "type": "reflection",
+      "text": "You weren’t just inside your own day — you were part of something larger. That shift in perspective is often where meaning starts to show up.",
+      "next": "SUMMARY"
+    },
+    {
+      "id": "A3_R2",
+      "type": "reflection",
+      "text": "When everything feels personal, the weight increases. Even briefly considering others can ease that — not by ignoring your problems, but by placing them in a wider frame.",
+      "next": "SUMMARY"
+    },
+    {
+      "id": "SUMMARY",
+      "type": "summary",
+      "text": "Today wasn’t just about what happened — it was about how you responded, what you contributed, and how wide your perspective was. Noticing these patterns is how better days are built.",
+      "next": "END"
+    },
+    {
+      "id": "END",
+      "type": "end",
+      "text": "That’s it for today. See you tomorrow."
+    }
+  ]
+}
