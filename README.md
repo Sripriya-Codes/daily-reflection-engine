@@ -97,11 +97,15 @@ flowchart TD
 - Structured reflection flow
 - No dependency on AI at runtime
 
+---
+
 ## 🎯 Purpose
 
 This project demonstrates how psychological concepts can be translated into structured systems that guide thinking without relying on generative AI.
 
 It reflects a knowledge engineering approach by turning abstract ideas into navigable decision trees.
+
+---
 
 ## 🚀 Future Improvements
 
@@ -112,6 +116,6 @@ It reflects a knowledge engineering approach by turning abstract ideas into navi
 
 ---
 
-### 📌 Note
+### 📌 Note:
 
 AI tools were used during development for ideation and refinement, but the final system is fully deterministic and does not rely on AI execution.
