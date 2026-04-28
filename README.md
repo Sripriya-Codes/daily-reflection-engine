@@ -91,11 +91,11 @@ flowchart TD
 
 ## ✨ Key Features
 
-Deterministic decision tree
-Fixed-option branching
-Signal-based state tracking
-Structured reflection flow
-No dependency on AI at runtime
+- Deterministic decision tree
+- Fixed-option branching
+- Signal-based state tracking
+- Structured reflection flow
+- No dependency on AI at runtime
 
 ## 🎯 Purpose
 
@@ -105,24 +105,13 @@ It reflects a knowledge engineering approach by turning abstract ideas into navi
 
 ## 🚀 Future Improvements
 
-More nuanced signal scoring
-Dynamic summary generation
-UI-based interaction
-Larger question bank for variation
-
-## 📌 Note
-
-AI tools were used during development for ideation and refinement, but the final system is fully deterministic and does not rely on AI execution.
+- More nuanced signal scoring
+- Dynamic summary generation
+- UI-based interaction
+- Larger question bank for variation
 
 ---
 
-# ✅ AFTER THIS
+### 📌 Note
 
-1. Save file
-2. Run:
-
-```bash
-git add .
-git commit -m "final readme"
-git push
-```
+AI tools were used during development for ideation and refinement, but the final system is fully deterministic and does not rely on AI execution.
