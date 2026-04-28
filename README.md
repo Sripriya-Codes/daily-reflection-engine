@@ -80,7 +80,3 @@ It reflects a knowledge engineering approach by turning abstract ideas into navi
 ### 📌 Note:
 
 AI tools were used during development for ideation and refinement, but the final system is fully deterministic and does not rely on AI execution.
-
-```
-
-```
